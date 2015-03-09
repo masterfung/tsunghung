@@ -11,7 +11,7 @@ container_commands:
 option_settings:
   "aws:elasticbeanstalk:application:environment":
     DJANGO_SETTINGS_MODULE: "tsunghung.settings"
-    "application_stage": "staging"
+    "PYTHONPATH": "/opt/python/current/app/tsunghung:$PYTHONPATH"
   "aws:elasticbeanstalk:container:python":
     WSGIPath: tsunghung/wsgi.py
     NumProcesses: 3
